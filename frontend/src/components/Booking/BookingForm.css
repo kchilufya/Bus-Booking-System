@@ -1,0 +1,156 @@
+.booking-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.booking-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.booking-header h2 {
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.booking-header p {
+    color: #ecf0f1;
+    font-size: 16px;
+}
+
+.booking-summary-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.booking-summary-card h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.summary-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.summary-row:last-child {
+    border-bottom: none;
+}
+
+.summary-row.total {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ecf0f1 100%);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.summary-row .label {
+    color: #7f8c8d;
+    font-weight: 500;
+}
+
+.summary-row .value {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.summary-row .value.price {
+    color: #ff4757;
+    font-size: 24px;
+}
+
+.seats-display {
+    background: #ff4757;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.passenger-form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.passenger-form h3 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #ff4757;
+}
+
+.form-actions {
+    margin-top: 30px;
+}
+
+.btn-large {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.form-note {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .booking-form-container {
+        padding: 10px;
+    }
+
+    .booking-summary-card,
+    .passenger-form {
+        padding: 20px;
+    }
+
+    .summary-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .summary-row .value.price {
+        font-size: 20px;
+    }
+}

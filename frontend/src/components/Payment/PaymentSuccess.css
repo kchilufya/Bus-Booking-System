@@ -1,0 +1,184 @@
+.success-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.success-card {
+    background: white;
+    border-radius: 20px;
+    padding: 50px 40px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    text-align: center;
+    animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.success-icon {
+    margin-bottom: 30px;
+}
+
+.checkmark {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #2ed573 0%, #26de81 100%);
+    color: white;
+    font-size: 50px;
+    line-height: 80px;
+    border-radius: 50%;
+    animation: scaleIn 0.5s ease;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.success-card h1 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.success-message {
+    color: #7f8c8d;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.booking-details-section {
+    text-align: left;
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.booking-details-section h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row .label {
+    color: #7f8c8d;
+    font-weight: 500;
+}
+
+.detail-row .value {
+    color: #2c3e50;
+    font-weight: 600;
+    text-align: right;
+}
+
+.booking-id {
+    background: linear-gradient(135deg, #ff4757 0%, #e74c3c 100%);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.seats-list {
+    background: #2ed573;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.next-steps {
+    text-align: left;
+    background: #fff9e6;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border-left: 4px solid #ffd32a;
+}
+
+.next-steps h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.next-steps ul {
+    margin: 0;
+    padding-left: 25px;
+}
+
+.next-steps li {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn-large {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.support-info {
+    padding-top: 20px;
+    border-top: 2px solid #f8f9fa;
+}
+
+.support-info p {
+    color: #7f8c8d;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .success-card {
+        padding: 30px 20px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .detail-row .value {
+        text-align: left;
+    }
+}

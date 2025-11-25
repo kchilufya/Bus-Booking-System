@@ -1,0 +1,13 @@
+.admin-dashboard { max-width: 1100px; margin: 20px auto; padding: 20px; }
+.admin-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }
+.admin-tabs { display:flex; gap:8px; margin-bottom:16px; }
+.tab { padding:8px 12px; border-radius:8px; background:#f1f1f1; cursor:pointer; }
+.tab.active { background:linear-gradient(135deg,#ff4757,#e74c3c); color:white; }
+.report-table { width:100%; border-collapse:collapse; }
+.report-table th, .report-table td { padding:8px 10px; border:1px solid #eee; text-align:left; }
+.admin-login-card { max-width:420px; margin:40px auto; padding:20px; background:white; border-radius:10px; box-shadow:0 8px 30px rgba(0,0,0,0.08); }
+.form-group { margin-bottom:12px; display:flex; flex-direction:column; }
+.form-group label { font-weight:600; margin-bottom:6px; }
+.form-group input { padding:8px 10px; border-radius:6px; border:1px solid #ddd; }
+.admin-actions { display:flex; gap:12px; margin-top:12px; }
+.error { color:#e74c3c; margin-top:8px; }

@@ -1,0 +1,100 @@
+.route-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.route-list-container h2 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.routes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.route-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.route-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.route-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.route-header h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.route-header .arrow {
+    color: #ff4757;
+    font-size: 2rem;
+}
+
+.route-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.detail-item .icon {
+    font-size: 1.5rem;
+}
+
+.detail-item .price {
+    font-weight: bold;
+    color: #ff4757;
+    font-size: 1.3rem;
+}
+
+.route-card .btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.loading, .no-routes {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .routes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .route-header h3 {
+        font-size: 1.2rem;
+    }
+}
